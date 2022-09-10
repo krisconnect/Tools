@@ -1,0 +1,1 @@
+gwmi -List | sls Product
