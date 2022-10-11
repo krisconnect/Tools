@@ -1,0 +1,39 @@
+Event: Process Creation
+    View:
+        Get-WinEvent -FilterHashTable @{LogName='Security';ID='4688'} -MaxEvents 1 | Format-List
+    Check Logging Status:
+        auditpol /get /subcategory:"Process Creation"
+    Disable Logging:
+        auditpol /set /subcategory:"Process Creation" /Success:Disable /Failure:Disable
+    Enable Logging:
+        auditpol /set /subcategory:"Process Creation" /Success:Enable /Failure:Enable
+
+Event: Process Termination
+    View:
+        Get-WinEvent -FilterHashTable @{LogName='Security';ID='4689'} -MaxEvents 1 | Format-List
+    Check Logging Status:
+        auditpol /get /subcategory:"Process Termination"
+    Disable Logging:
+        auditpol /set /subcategory:"Process Termination" /Success:Disable /Failure:Disable
+    Enable Logging:
+        auditpol /set /subcategory:"Process Termination" /Success:Enable /Failure:Enable
+
+Event: Windows Firewall Policy Active
+    View:
+        Get-WinEvent -FilterHashTable @{LogName='Security';ID='4944'} -MaxEvents 1 | Format-List
+    Check Logging Status:
+        auditpol /get /subcategory:"MPSSVC Rule-Level Policy Change"
+    Disable Logging:
+        auditpol /set /subcategory:"MPSSVC Rule-Level Policy Change" /Success:Disable /Failure:Disable
+    Enable Logging:
+        auditpol /set /subcategory:"MPSSVC Rule-Level Policy Change" /Success:Enable /Failure:Enable
+
+Event: Windows Firewall Rule Listed
+    View:
+        Get-WinEvent -FilterHashTable @{LogName='Security';ID='4945'} -MaxEvents 1 | Format-List
+    Check Logging Status:
+        auditpol /get /subcategory:"MPSSVC Rule-Level Policy Change"
+    Disable Logging:
+        auditpol /set /subcategory:"MPSSVC Rule-Level Policy Change" /Success:Disable /Failure:Disable
+    Enable Logging:
+        auditpol /set /subcategory:"MPSSVC Rule-Level Policy Change" /Success:Enable /Failure:Enable

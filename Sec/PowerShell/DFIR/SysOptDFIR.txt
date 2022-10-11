@@ -1,0 +1,3 @@
+Event: Service Installed
+    View:
+        Get-WinEvent -FilterHashTable @{LogName='System';ID='7045'} -MaxEvents 1 | Format-List

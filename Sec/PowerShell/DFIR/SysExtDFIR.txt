@@ -1,0 +1,23 @@
+Event: Wifi Connection
+    View:
+        $xml = @'
+<QueryList>
+    <Query Id="0" Path="Microsoft-Windows-WLAN-AutoConfig/Operational">
+        <Select Path="Microsoft-Windows-WLAN-AutoConfig/Operational">*[System[(EventID=8001)]]
+ </Select>
+ </Query>
+</QueryList>
+'@
+Get-WinEvent -FilterXM: $xml | select -first 1 | Format-Table -wrap 
+
+Event: Wifi Disconnect
+    View:
+        $xml = @'
+<QueryList>
+    <Query Id="0" Path="Microsoft-Windows-WLAN-AutoConfig/Operational">
+        <Select Path="Microsoft-Windows-WLAN-AutoConfig/Operational">*[System[(EventID=8003)]]
+ </Select>
+ </Query>
+</QueryList>
+'@
+Get-WinEvent -FilterXM: $xml | select -first 1 | Format-Table -wrap 

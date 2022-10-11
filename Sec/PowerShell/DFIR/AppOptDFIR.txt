@@ -1,0 +1,7 @@
+Event: Software Uninstalled
+    View:
+        Get-WinEvent -FilterHashTable @{LogName='Application';ID='11724'} -MaxEvents 1 | Format-List
+
+Event: Software Updated
+    View:
+        Get-WinEvent -FilterHashTable @{LogName='Application';ID='1036';ProviderName='MsiInstaller'} -MaxEvents 1 | Format-List

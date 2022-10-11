@@ -1,0 +1,125 @@
+Event: Group Deletion
+    View:
+        Get-WinEvent -FilterHashTable @{LogName='Security';ID='4734'} -MaxEvents 1 | Format-List
+    Check Logging Status:
+        auditpol /get /subcategory:"security group management"
+    Disable Logging:
+        auditpol /set /subcategory:"security group management" /Success:Disable /Failure:Disable
+    Enable Logging:
+        auditpol /set /subcategory:"security group management" /Success:Enable /Failure:Enable
+
+Event: Member Removed From Group
+    View:
+        Get-WinEvent -FilterHashTable @{LogName='Security';ID='4733'} -MaxEvents 1 | Format-List
+    Check Logging Status:
+        auditpol /get /subcategory:"security group management"
+    Disable Logging:
+        auditpol /set /subcategory:"security group management" /Success:Disable /Failure:Disable
+    Enable Logging:
+        auditpol /set /subcategory:"security group management" /Success:Enable /Failure:Enable
+
+Event: Scheduled Task Deletion
+    View:
+        Get-WinEvent -FilterHashTable @{LogName='Security';ID='4699'} -MaxEvents 1 | Format-List
+
+Event: Scheduled Task Disabled
+    View:
+        Get-WinEvent -FilterHashTable @{LogName='Security';ID='4701'} -MaxEvents 1 | Format-List
+
+Event: Scheduled Task Update
+    View:
+        Get-WinEvent -FilterHashTable @{LogName='Security';ID='4702'} -MaxEvents 1 | Format-List
+
+Event: Screen Saver Dismissed
+    View:
+        Get-WinEvent -FilterHashTable @{LogName='Security';ID='4803'} -MaxEvents 1 | Format-List
+    Check Logging Status:
+        auditpol /get /subcategory:"Other Logon/Logoff Events"
+    Disable Logging:
+        auditpol /set /subcategory:"Other Logon/Logoff Events" /Sucess:Disable /Failure:Disable
+    Enable Logging:
+        auditpol /set /subcategory:"Other Logon/Logoff Events" /Sucess:Enable /Failure:Enable
+
+Event: Screen Saver Invoked
+    View:
+        Get-WinEvent -FilterHashTable @{LogName='Security';ID='4802'} -MaxEvents 1 | Format-List
+    Check Logging Status:
+        auditpol /get /subcategory:"Other Logon/Logoff Events"
+    Disable Logging:
+        auditpol /set /subcategory:"Other Logon/Logoff Events" /Sucess:Disable /Failure:Disable
+    Enable Logging:
+        auditpol /set /subcategory:"Other Logon/Logoff Events" /Sucess:Enable /Failure:Enable
+
+Event: Special Logon
+    View:
+        Get-WinEvent -FilterHashTable @{LogName='Security';ID='4672'} -MaxEvents 1 | Format-List
+    Check Logging Status:
+        auditpol /get /subcategory:"Special Logon"
+    Disable Logging:
+        auditpol /set /subcategory:"Special Logon" /Success:Disable /Failure:Disable
+    Enable Logging:
+        auditpol /set /subcategory:"Special Logon" /Success:Enable /Failure:Enable
+
+Event: Windows Firewall Active Profile Changed
+    View:
+        Get-WinEvent -FilterHashTable @{LogName='Security';ID='4956'} -MaxEvents 1 | Format-List
+    Check Logging Status:
+        auditpol /get /subcategory:"MPSSVC Rule-Level Policy Change"
+    Disable Logging:
+        auditpol /set /subcategory:"MPSSVC Rule-Level Policy Change" /Success:Disable /Failure:Disable
+    Enable Logging:
+        auditpol /set /subcategory:"MPSSVC Rule-Level Policy Change" /Success:Enable /Failure:Enable
+
+Event: Windows Firewall Active Driver Started
+    View:
+        Get-WinEvent -FilterHashTable @{LogName='Security';ID='5033'} -MaxEvents 1 | Format-List
+
+Event: Windows Firewall Group Policy Changed
+    View:
+        Get-WinEvent -FilterHashTable @{LogName='Security';ID='4954'} -MaxEvents 1 | Format-List
+    Check Logging Status:
+        auditpol /get /subcategory:"MPSSVC Rule-Level Policy Change"
+    Disable Logging:
+        auditpol /set /subcategory:"MPSSVC Rule-Level Policy Change" /Success:Disable /Failure:Disable
+    Enable Logging:
+        auditpol /set /subcategory:"MPSSVC Rule-Level Policy Change" /Success:Enable /Failure:Enable
+
+Event: Windows Firewall Rule Not Applied
+    View:
+        Get-WinEvent -FilterHashTable @{LogName='Security';ID='4957'} -MaxEvents 1 | Format-List
+    Check Logging Status:
+        auditpol /get /subcategory:"MPSSVC Rule-Level Policy Change"
+    Disable Logging:
+        auditpol /set /subcategory:"MPSSVC Rule-Level Policy Change" /Success:Disable /Failure:Disable
+    Enable Logging:
+        auditpol /set /subcategory:"MPSSVC Rule-Level Policy Change" /Success:Enable /Failure:Enable
+
+Event: Windows Firewall Setting Changed
+    View:
+        Get-WinEvent -FilterHashTable @{LogName='Security';ID='4950'} -MaxEvents 1 | Format-List
+    Check Logging Status:
+        auditpol /get /subcategory:"MPSSVC Rule-Level Policy Change"
+    Disable Logging:
+        auditpol /set /subcategory:"MPSSVC Rule-Level Policy Change" /Success:Disable /Failure:Disable
+    Enable Logging:
+        auditpol /set /subcategory:"MPSSVC Rule-Level Policy Change" /Success:Enable /Failure:Enable
+
+Event: Workstation Locked
+    View:
+        Get-WinEvent -FilterHashTable @{LogName='Security';ID='4800'} -MaxEvents 1 | Format-List
+    Check Logging Status:
+        auditpol /get /subcategory:"Other Logon/Logoff Events"
+    Disable Logging:
+        auditpol /set /subcategory:"Other Logon/Logoff Events" /Sucess:Disable /Failure:Disable
+    Enable Logging:
+        auditpol /set /subcategory:"Other Logon/Logoff Events" /Sucess:Enable /Failure:Enable
+
+Event: Workstation Unlocked
+    View:
+        Get-WinEvent -FilterHashTable @{LogName='Security';ID='4801'} -MaxEvents 1 | Format-List
+    Check Logging Status:
+        auditpol /get /subcategory:"Other Logon/Logoff Events"
+    Disable Logging:
+        auditpol /set /subcategory:"Other Logon/Logoff Events" /Sucess:Disable /Failure:Disable
+    Enable Logging:
+        auditpol /set /subcategory:"Other Logon/Logoff Events" /Sucess:Enable /Failure:Enable

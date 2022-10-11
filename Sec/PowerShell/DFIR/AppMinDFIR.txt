@@ -1,0 +1,3 @@
+Event: Software Installed
+    View:
+        Get-WinEvent -FilterHashTable @{LogName='Application';ID='11707'} -MaxEvents 1 | Format-List
