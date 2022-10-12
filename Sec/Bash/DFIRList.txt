@@ -1,0 +1,21 @@
+grep "new user" /var/log/auth.log
+
+grep "delete user" /var/log/auth.log
+
+grep failure /var/log/auth.log
+
+grep "new group" /var/log/auth.log
+
+grep usermod /var/log/auth.log | grep add
+
+grep usermod /var/log/auth.log | grep delete
+
+grep "session closed" /var/log/auth.log
+
+grep "session opened" /var/log/auth.log
+
+grep " groupdel" /var/log/auth.log
+
+grep "install " /var/log/dpkg.log
+
+grep "upgrade " /var/log/dpkg.log
