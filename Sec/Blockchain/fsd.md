@@ -21,3 +21,8 @@
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     a, To interact with specific functions use ``` cast send/call [contractAddress] "[functionName]([inputType])" [value/arguements] --rpc-url --private-key```
 
+# Additional Resources
+### This section is my collection of links/tools/articles that I find useful during research and testing.
+- [Example exploits](https://github.com/Cyfrin/sc-exploits-minimized.git)
+- [Reports](https://github.com/softstackHQ/Smart-Contract-Security-Audits)
+- [Solana hacking](https://github.com/0xsanny/solsec)

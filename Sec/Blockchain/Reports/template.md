@@ -78,6 +78,15 @@ We use the [CodeHawks](https://docs.codehawks.com/hawks-auditors/how-to-evaluate
 # Executive Summary
 ## Issues found
 # Findings
+### [S-#] TITLE (Root Cause + Impact)
+
+**Description:** 
+
+**Impact:** 
+
+**Proof of Concept:**
+
+**Recommended Mitigation:** 
 # High
 # Medium
 # Low 
