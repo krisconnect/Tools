@@ -17,5 +17,6 @@ fn process_instruction(
 ) -> ProgramResult {
     
     msg!("Hello Solana!");
+    //msg!("Program ID: {}", _program_id); to print program ID
     Ok(())
 }
