@@ -292,4 +292,15 @@ The wrapping issue occurs at 20 ether:
 Use newer version of solidity. Version > 0.8.0.
 
 # Informational
-# Gas 
+
+# Gas
+
+### [S-L] Function is not used anywhere in the contract
+
+**Description:** The function ```_isActivePlayer()``` is declared as a function but it is not used anywhere else in the code base.
+
+**Impact:** The unused function still takes computational power and hence increases the gas cost of the protocol
+
+**Proof of Concept:** N/a.
+
+**Recommended Mitigation:** Delete the function or implement it.
