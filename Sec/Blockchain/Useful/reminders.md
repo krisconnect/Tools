@@ -10,3 +10,5 @@
 9. King - Sometimes you win by just not allowing anyone else to win. Know your functions! ```transfer``` can fail, we can just simply not implement receive functions in the attack contract!
 10. Re-entrency - If CEI is not followed, the call function will trigger the recieve function in the attacker contract which can initiate a loop to drain funds before states are updated. With an elegant selfdestruct at the end? A work of art.
 11. Elevator - This one I didn't get at first tbh, included as a reminder to focus on logic rather than words!
+12. Privacy - Refresher on how (storage slots works)[https://docs.soliditylang.org/en/latest/internals/layout_in_storage.html]
+13. Gatekeeper - 
