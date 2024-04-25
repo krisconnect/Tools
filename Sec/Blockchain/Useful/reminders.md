@@ -13,4 +13,4 @@
 12. Privacy - Refresher on how (storage slots works)[https://docs.soliditylang.org/en/latest/internals/layout_in_storage.html]
 13. Gatekeeper I - Remember ```tx.origin``` and ```tx.sender```, write test for calculating gas and typecasting
 14. Gatekeeper II - Data passed in the constructor will lead to a code size of zero, C background with bitwise operations comming in hot, XOR a with a is 0.
-15. Naught Coin - 
+15. Naught Coin - What the rules don't specifically deny, it is allowed. Make sure to understand everything that is imported, or better yet only import what you need. Built everything locally and used cast to chew through it. Fantastic exercise!
