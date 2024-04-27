@@ -15,3 +15,4 @@
 14. Gatekeeper II - Data passed in the constructor will lead to a code size of zero, C background with bitwise operations comming in hot, XOR a with a is 0.
 15. Naught Coin - What the rules don't specifically deny, it is allowed. Make sure to understand everything that is imported, or better yet only import what you need. Built everything locally and used cast to chew through it. Fantastic exercise!
 16. Preservation - Delegate call overwriting buffer again and typecasting addresses correctly!
+17. Recovery - Calculate the address of an ethereum contract (https://ethereum.stackexchange.com/questions/760/how-is-the-address-of-an-ethereum-contract-computed)
