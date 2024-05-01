@@ -17,3 +17,4 @@
 16. Preservation - Delegate call overwriting buffer again and typecasting addresses correctly!
 17. Recovery - Calculate the address of an ethereum contract (https://ethereum.stackexchange.com/questions/760/how-is-the-address-of-an-ethereum-contract-computed)
 18. Magic Number - [Deploying contract written in bytecode](https://solidity-by-example.org/app/simple-bytecode-contract/) LOVE assembly.
+19. Alien Codex - Older version magic, calculating underflow, checking contract layout. Need to revisit this one for sure...

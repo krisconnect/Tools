@@ -2,33 +2,20 @@
 First ever exposure to solana/rust! :)
 
 ### My experience
-
+Everything rust felt very well put together, really enjoyed working with it, in love with the language 10/10.
+The solana-cli 🤯Really fast, felt amazing to create accounts, mint tokens, send sol 9/10.
+Client side stuff...what a struggle...need to up my javascript by a lot 4/10...
+Solana...janky af...spent most of my time trying to figure out issues and cryptic error messages... 2/10.
+Exercises and hands-on experience 3/10. I really wanted to see solutions, live coding, more exercises and 101 coding support.
+Community: 2/10 because that's how many people I actually had a chat from 130.
+Overall 5/10: I've mostly learned on my own, but I never needed help with that. I was really looking forward to interacting with people and collaborating which would've been the real value to me...
 ## Final project
-### The idea
-- The werewolf game, first as a text and turn based play to earn deduction game!
-- Players enter the game which has DAO like elements, they put in some money which the winner will be able to take (either the wolf or the villagers)
-- This is just a PoC, later more roles and rewards can be added
-- The players will be able to talk to each other via posts and will be able to vote after taking action
-- Inactive players will be kicked
-### Technicalities
-- The game is played in turns in a cyclical fashion, alternating state between day and night.
-- During the day each player must submit a post, where they can make a case about who should be voted out. After posting their comments they either vote or abstain. Each player has two life.
-- During the night the wolf attacks someone they lose a life and a character is revealed from the wolf’s public key if it has any matching values in the target’s public key. The wolf must kill three villagers to win but each attack reveals more of his identity... 
-- The game is won if either the wolf is killed or only one villager and the wolf is left.
-### Overview of the game
-1. Five players each pay an entry fee and the werewolf is randomly selected
-2. Night time the werewolf bites someone
-    a, A player loses 1 life
-    b, A character is revealed from the werewolves address
-3. Day time the village decides
-    a, Everyone leaves a comment
-    b, Everyone votes
-4. Repeat from point 2 until the game is over
-    a, Either the wolf is voted out
-    b, Or there is only one villager and the wolf is left
-5. Money is distributed and payed out
-    a, Funds all go to the wolf or
-    b, Funds are distributed between the players
-
+### Idea 1: Werewolf game
+https://docs.google.com/presentation/d/1jKf3bviyAmgPHSyUBnA_X8oEpJMBHbdjmXTlK_28rO8/edit#slide=id.p
+Would've needed a lot more time to finish :(
+### Idea 2: Hashvault
+A hashvault to help digital creators gain an additional layer of ownership over their products!
+A hashvault can be used when disputes around proof of ownership arise:
+The user uploads a hash of their digital product with a seed of their choice to be stored on chain. A proof of ownership can be provided by running the hash function again and cross-referencing it with the on-chain seeded value.
 
 
