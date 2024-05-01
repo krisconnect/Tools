@@ -1,0 +1,12 @@
+[features]
+seeds = false
+[programs.localnet]
+hashvault = "BtSZDMEWUNjHi38dqbxf1qxBahf4vtUn8HurZxSE85px"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "localnet"
+wallet = "../keypair.json" #modify
+
