@@ -22,4 +22,5 @@
 21. Shop - Best I can describe it now is an interface hijack attack :/ If the interface that the contract is using points to ```msg.sender```, then the execution is going to happen in the attack contract's context. So the ```buy``` function is checking for values in the attacker's contract.
 22. Dex - Rounding error, do the math!
 23. DexTwo - Verify the token addresses used in swaps!
-24.  
+24. PuzzleWallet - Understand how functions interact! tbc
+25.  
