@@ -18,3 +18,8 @@
 17. Recovery - Calculate the address of an ethereum contract (https://ethereum.stackexchange.com/questions/760/how-is-the-address-of-an-ethereum-contract-computed)
 18. Magic Number - [Deploying contract written in bytecode](https://solidity-by-example.org/app/simple-bytecode-contract/) LOVE assembly.
 19. Alien Codex - Older version magic, calculating underflow, checking contract layout. Need to revisit this one for sure...
+20. Denial - Make sure that there is a require when working with ```call``` functions, that makes sure the code execution is uninterrupted!
+21. Shop - Best I can describe it now is an interface hijack attack :/ If the interface that the contract is using points to ```msg.sender```, then the execution is going to happen in the attack contract's context. So the ```buy``` function is checking for values in the attacker's contract.
+22. Dex - Rounding error, do the math!
+23. DexTwo - Verify the token addresses used in swaps!
+24.  
