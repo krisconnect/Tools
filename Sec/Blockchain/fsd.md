@@ -27,3 +27,5 @@
 - [Reports](https://github.com/softstackHQ/Smart-Contract-Security-Audits)
 - [Solana hacking](https://github.com/0xsanny/solsec)
 - [Slither Usage](https://github.com/crytic/slither/wiki/Usage#detector-selection) // To go through output one-by-one, removing resolved findings.
+- [UpgradeHub](https://upgradehub.xyz/) Checking changes for upgradeable contracts.
+- [Solodit](https://solodit.xyz/) For research
