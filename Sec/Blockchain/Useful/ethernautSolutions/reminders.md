@@ -24,3 +24,7 @@
 23. DexTwo - Verify the token addresses used in swaps!
 24. PuzzleWallet - Understand how functions interact! tbc
 25.  
+
+# Dev stuff
+1. Removing elements from array: Copy the last element of the array to the index you want removed and just pop.
+2. Order of inheritance: most base-like to derived.
