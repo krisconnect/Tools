@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.19;
+pragma solidity ^0.8;
 
 contract MappingBasic {
     // Mapping from address to uint256 used to store balance of addresses
